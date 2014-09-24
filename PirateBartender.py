@@ -27,9 +27,9 @@ nouns = ["Dingo","Jackhammer","Navel", "Superhero","Doughnut"]
 
 customers = {}
 
-def askStyle(styleDict):
+def askStyle(styleDict):  # don't use camelCase for function names, user under_score
     
-    print
+    print  # why the random print statement?
 
     for style in questions.keys():
         response = raw_input(questions[style] + " ")
@@ -44,7 +44,7 @@ def constructDrink(styleDict):
     
     for style in styleDict.keys():
 
-        if styleDict[style] == True:
+        if styleDict[style] == True:  # When comparing to True use `is` - i.e., if x is True
 
             randomChoice = random.choice(ingredients[style])
 
@@ -92,7 +92,7 @@ def serveCustomer(customer_name):
 
 if __name__ == '__main__':
     
-    styleDict = {}
+    styleDict = {}  # don't use camelCase for variable names, user under_score
 
     while True:
         customer_name = raw_input("\nAhoy thar... what be yar name? ")
